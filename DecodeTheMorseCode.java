@@ -1,4 +1,4 @@
-public class MorseCodeDecoder {
+public class DecodeTheMorseCode {
     public static String decode(String morseCode) {
         morseCode = morseCode.trim();
         String[] words = morseCode.split(" ");
@@ -7,7 +7,7 @@ public class MorseCodeDecoder {
             if (words[i].equals("") && !words[i+1].equals("")) {
                 build.append(" ");
             } else if (!words[i].equals("")) {
-                build.append(MorseCode.get(words[i])); // библиотека CW
+//                build.append(MorseCode.get(words[i])); // библиотека CW
             }
         }
         return build.toString();
